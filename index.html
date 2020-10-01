@@ -6,23 +6,15 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-	<div id="vue-app">
-		<h1>{{ courses('VueJs') }}</h1>
-		<p>Name : {{ name }}</p>
-		<p>Age  : {{ age }}</p>
-		<h2>Data Binding</h2>
-		<p>Website : <a v-bind:href="website">{{ website }}</a></p>
-		<p>Website tag: <a v-html:href="websiteTag">Website Tag</a></p>
-		<h2>Data binding</h2>
-		<p>Change Name : <input type="text" v-bind:value="name" v-model="name"></p>
-		<p>Change Age : <input type="text" v-bind:value="age" v-model="age"></p>
-		<h2>Event</h2>
-		<button v-on:click="addAge(1)">Add a Year</button>
-		<button v-on:click="subtractAge(1)">Subtract a Year</button>
-		<button v-on:dblclick="addAge(10)">Add 10 Year</button>
-		<button v-on:dblclick="subtractAge(10)">Subtract 10 Year</button>
-		<p>My is age is {{ age }}</p>
-		<div class="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
+	<div id="vue-app-one">
+		<h1>{{ title }}</h1>
+		<p>{{ greet }}</p>
+	</div>
+
+	<div id="vue-app-two">
+		<h1>{{ title }}</h1>
+		<p>{{ greet }}</p>
+		<button v-on:click="changeAppOneTitle">Change App One Title</button>
 	</div>
 
 	<script src="app.js"></script>
