@@ -1,0 +1,35 @@
+.canvas{
+	width: 600px;
+	padding: 200px 200px;
+	text-align: center;
+	border: 1px solid #333
+}
+
+#bag{
+	width: 200px;
+	height: 500px;
+	margin: 0 auto;
+	background: url(./img/bag.png) center no-repeat;
+	background-size: 80%;
+}
+
+#bag.brust{
+	background: url(./img/bag-burst.png) center no-repeat;
+	background-size: 80%;
+}
+
+#bag-health {
+	width: 200px;
+	border: 2px solid #000;
+	margin: 0 auto 20px auto;
+}
+
+#bag-health div{
+	height: 20px;
+	background: crimson;
+}
+
+#controls{
+	width: 156px;
+	margin: 0 auto;
+}

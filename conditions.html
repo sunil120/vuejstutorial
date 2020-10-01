@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VueJs</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>{{ courses('VueJs') }}</h1>
+		<button v-on:click="error=!error">Toggle Error</button>
+		<button v-on:click="success=!success">Toggle Success</button>
+		<p v-if="error">Error block</p>
+		<p v-else-if="success">Success block</p>
+		<p v-else="success">Both block</p>
+
+
+		<h2>Loop</h2>
+
+		<ul>
+			<li v-for="todo in todods"> {{ todo }}</li>
+		</ul>
+
+		<template v-for="user in users">
+			<ul>
+				<li v-for="(value,key) in user">{{ key }} : {{ value }}</li>
+			</ul>
+		</template>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
